@@ -10,8 +10,6 @@ class Solution {
         // In one minute, hour's hand makes 1/2 = 0.5 degree
         double hoursHand = ((hour % 12) * 60 + minutes) / 2.0;
         int minutesHand = minutes * 6;
-        // System.out.println("HoursHand : " + hoursHand);
-        // System.out.println("MinutesHand : " + minutesHand);
         double angle = Math.abs(hoursHand-minutesHand);
         if(angle <= 180)
             return angle;
